@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+    function data(){
+        a = document.getElementById("txtA");
+        r = document.getElementById("divResult");
+        if(a.value == "11/01/2000"){
+            r.innerHTML = "đúng rồi";
+            r.style.color = "green";
+
+
+        }else{
+            r.innerHTML = "sai rồi";
+            r.style.color = "red";
+
+        }
+    
+    }
+    function showHide(){
+        a = document.getElementById("txtA");
+        bnt = document.getElementById("bntShowHide");
+        if(bnt.innerHTML == "Show"){
+             bnt.innerHTML = "Hide";
+            a.type = "text";
+
+        }else{
+           
+            bnt.innerHTML = "Show";
+            a.type = "password";
+        }
+    }
+    </script>
+</head>
+<body>
+    <p>Nhập ngày sinh của em</p>
+    <input type="text" id="txtA" value="***"  onkeyup="data()" >
+    <label id="bntShowHide" onclick="showHide()" style="cursor: pointer">Show</label>
+    
+
+
+    
+
+    <div id = "divResult"></div>
+    <a href="https://ntringuyen.github.io/test1.github.io/" id="contact" target="_blank">Đăng nhập.</a>
+</body>
+</html>
